@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- in mobile set initial zoom level of page to 100%, set site size to equal device width not a larger canvas that is shrunk down-->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Leila Akbari Portfolio</title>
+    <!-- Link to reset or normalize before main.css
+    only choose one -->
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- JS -->
+    <!-- <script src="js/vanilla-tilt.js"></script> -->
+    <script defer type="module" src="js/main.js"></script>
+</head>
+
+<body class="wrapper">
+    <!-- <div class="mousemove"></div> -->
+    <div class="grid-con">
+        <header class="col-span-full" id="main-header">
+            <div class="col-start-1 col-end-2 m-col-start-2 m-col-end-3 l-col-start-2 xl-col-start-2">
+                <a href="logo-portfolio"
+                  ><img src="images/Akbari_Leila_Logo.svg" id="logo"
+                /></a>
+              </div>
+            <nav class="nav col-start-2 col-end-5 m-col-start-4 m-col-end-8 l-col-start-6 xl-col-start-6">
+                <ul>
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="index.html">About Me</a></li>
+                    <li class="nav-item"><a href="index.html">Projects</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div>
+        <div class="container-contact col-span-full" id="home">
+            <!-- <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8"> -->
+            <div class="card col-start-1 col-end-5 l-col-start-2 xl-col-start-2" data-tilt>    
+                <img class="col-span-full col-start-4 m-col-start-1 l-col-start-8 xl-col-start-8" src="images/HeroIMG1920.png" id="hero-img1" alt="hero-img">
+                <!-- <img class="col-span-full l-col-start-7" alt="hero-img"> -->
+                <div class="container-contact-box col-span-full m-col-start-2 m-col-end-12 xl-col-start-2 l-col-start-2 l-col-end-9 xl-col-end-12">
+                    <div class="contact-box col-start-1 col-end-4">
+                        <h3 class="col-start-1">Feel free to contact Me</h3>
+                            <input type="text" class="field" placeholder="First Name:">
+                            <input type="text" class="field" placeholder="Last Name:">
+                            <input type="text" class="field" placeholder="email:">
+                            <textarea class="field area" placeholder="Message:"></textarea>
+                            <button class="btn">Send</button>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+   
+
+    <!-- main library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- ScrollTrigger plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- ScrollTo plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <!-- our main js file -->
+    <script src="js/vanilla-tilt.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+</body>
+
+</html>
