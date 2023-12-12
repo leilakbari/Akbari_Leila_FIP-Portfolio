@@ -6,10 +6,10 @@
         const h1Text = "Hello!";
         // const h2Text = "I’m";
         // const staticText = "I’m ";
-        const phrases = ["Leila Akbari", "UI/UX designer", "Developer"];
+        const phrases = ["Leila Akbari", "a UI/UX designer", "a Developer"];
         const el = document.querySelector("#typing");
 
-        const pText = "I'm an artist and designer based in Canada, who instead of traditional tools like pens or brushes, uses code as a creative tool.  I love crafting designs that are not only visually stunning but also functional, each one tailored to fit the unique vibes of my clients. Living for that aha moment when someone interacts with my creations, I'm always learning and pushing my boundaries.";
+        const pText = "I'm an artist and designer based in Canada, who instead of traditional tools like pens or brushes, use code as a creative tool.  I love crafting designs that are not only visually stunning but also functional, each one tailored to fit the unique vibes of my clients. Living for that aha moment when someone interacts with my creations, I'm always learning and pushing my boundaries.";
     
         loadInfo(textHeroElement.querySelector("h1"), h1Text);
         loadInfo(textHeroElement.querySelector("p"), pText);
