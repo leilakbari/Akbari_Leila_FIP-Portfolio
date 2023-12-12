@@ -1,0 +1,46 @@
+@use '../abstracts' as a;
+
+.container3 {
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/ErrorpageBG.png) no-repeat, linear-gradient( a.$primary-color, a.$primary-color);
+    // background-position: center;
+    background-size: 70%;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    justify-content: space-around;
+    flex-direction: row;
+    // position: relative;
+}
+
+
+#hero-error {
+	max-width: 100%;
+    // width: 50%;
+	margin-left: 50px;
+}
+
+@media screen and (max-width: 1200px) { 
+
+	#hero-img1 {
+		max-width: 70%;
+	}
+	
+}
+
+@media screen and (max-width: 768px) { 
+
+	#hero-img1 {
+		max-width: 70%;
+	}
+	
+}
+
+@media screen and (max-width: 375px) { 
+
+	#hero-img1 {
+		max-width: 20%;
+	}
+	
+}

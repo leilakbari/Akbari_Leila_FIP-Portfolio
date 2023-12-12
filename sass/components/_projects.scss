@@ -101,6 +101,12 @@
     font-size: a.$body-font-size;
     font-family: a.$body-font-family;
     margin-bottom: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.child h2:hover {
+    color: a.$third-color;
 }
 
 .child p {
