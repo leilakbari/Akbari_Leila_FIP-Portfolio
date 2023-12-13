@@ -115,6 +115,10 @@
 }
 
 @media screen and (max-width: 1200px) { 
+    .container2 {
+        background-size: 70%;
+    } 
+
     #projects h1 {
         font-size: 30px;
         margin-bottom: 0px;
@@ -147,122 +151,58 @@
 
 @media screen and (max-width: 768px) { 
     #projects h1 {
-        font-size: 30px;
+        font-size: a.$m-heading-font-size;
+    }
+
+    .child h2 {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+    
+    .child p {
+        font-size: 17px;
     }
 
 }
 
 @media screen and (max-width: 375px) { 
-    // #projects h1 {
-    //     font-size: 30px;
-    // }
 
     .container2 {
-        width: 100vw;
-        height: 100vh;
-        background: url(../images/projects-web1920.png) no-repeat, linear-gradient( a.$primary-color, a.$primary-color);
-        // background-position: center;
+        // width: 100vw;
+        width: 200%;
+        // height: 100vh;
+        height: 900px;
         background-size: 100%;
-        display: flex;
-        align-items: center;
-        // justify-content: center;
-        justify-content: space-around;
-        flex-direction: row;
-        // position: relative;
-    }
-    
-    .main-scroll-div {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    
-    }
-    
-    .slider-projects {
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .scroll-images {
-        width: 99%;
-        height: auto;
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        overflow: auto;
-        position: relative;
-        scroll-behavior: smooth;
-    }
-    
-    .scroll-images::-webkit-scrollbar {
-        -webkit-appearance: none;
     }
     
     .child {
-        cursor: pointer;
-        margin: 100px 12px;
+        margin: 90px 8px;
         min-width: 500px;
         height: 600px;
-        overflow: hidden;
-        // border: 1px solid a.$secondary-color;
     }
     
     .child-img {
-        height: auto;
-        width: 60%;
-        margin-bottom: 20px;
-        cursor: pointer;
+        width: 75%;
+        margin-bottom: 30px;
     }
     
     #projects h1 {
-        font-family: a.$heading-font-family;
-        font-size: a.$mobile-heading-font-size;
-        font-weight: a.$heading-font-weight;
-        align-items: center;
-        margin-bottom: 20px;
+        margin-top: 50px;
+        margin-bottom: 0px;
     }
     
     .control {
-        cursor: pointer;
-        color: a.$third-color;
-        background-color: rgba(100, 100, 100, 0.1);
-        font-size: 40px;
-        outline: none;
-        border: none;
-        padding: 10px;
-        border-radius: 40%;
-        position: absolute;
-        // object-fit: cover;
-        object-fit: contain;
-        // align-items: center;
-        z-index: 10;
-    }
-    
-    .control:hover {
-        color: #fff;
+        font-size: 50px;
     }
     
     .prev {
-        left: 2.5%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        left: 3%;
+        top: 52%;
     }
     
     .next {
         right: 0%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-    
-    .child h2 {
-        font-size: a.$mobile-heading-font-size;
-        font-family: a.$body-font-family;
-    }
-    
-    .child p {
-        font-size: a.$mobile-body-font-size;
-        font-family: a.$body-font-family;
+        top: 52%;
     }
 
 }

@@ -96,9 +96,35 @@ body {
 }
 
 @media screen and (max-width: 1200px) { 
-    #demo-text {
-        font-size: 20px;
-        margin-left: 50px;
+    body {
+        #demo-text {
+            font-size: 20px;
+            margin-left: 50px;
+        }
+    
+        .text-hero-earbuds {
+            margin-top: 0px;
+        }
+    
+        .text-hero-earbuds h3 {
+            font-size: a.$l-heading-font-size;
+            margin-top: 80px;
+        }
+    
+        .text-hero-earbuds p {
+            font-size: a.$l-body-font-size;
+            line-height: 35px;
+        }
+
+        .AR-text h3 {
+            font-size: a.$l-heading-font-size;
+            margin-top: 80px;
+        }
+    
+        .AR-text p {
+            font-size: a.$l-body-font-size;
+            line-height: 35px;
+        }
     }
 }
 
