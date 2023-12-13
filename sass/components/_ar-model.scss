@@ -152,14 +152,24 @@ model-viewer > #ar-prompt > img {
   model-viewer {
     height: 500px;
   }
-  
 }
 
-
 @media screen and (max-width: 768px) { 
+  model-viewer {
+    height: 350px;
+    width: 350px;
+    margin-top: -350px;
+    margin-left: 90px;
+  }
 
 }
 
 @media screen and (max-width: 375px) { 
+  model-viewer {
+    height: 350px;
+    width: 350px;
+    margin-top: 0px;
+    margin-left: 90px;
+  }
   
 }
