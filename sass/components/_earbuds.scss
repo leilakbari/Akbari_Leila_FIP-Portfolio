@@ -58,11 +58,11 @@ body {
     }
 
     #earbuds-video {
-        height: 75%;
+        height: 100%;
         width: auto;
         margin-left: 50px;
         margin-top: 30px;
-     }
+    }
      
     #earbuds-text {
         font-family: a.$secon-heading-font-family;
@@ -75,6 +75,24 @@ body {
          padding: 0px 0px;
          margin-left: 50px;
     }
+
+    .AR-text h3 {
+        // font-family: a.$heading-font-family;
+        font-family: a.$secon-heading-font-family;
+        font-size: a.$heading-font-size;
+        font-weight: a.$heading-font-weight;
+        margin-top: 80px;
+    }
+
+    .AR-text p {
+        font-family: a.$body-font-family;
+        font-size: a.$body-font-size;
+        line-height: 50px;
+        padding-top: 40px;
+        display: grid;
+        // margin-left: 170px;
+    }
+
 }
 
 @media screen and (max-width: 1200px) { 
