@@ -232,56 +232,6 @@ body {
     }
 }
 
-// @media screen and (min-width: 1920px) { 
-//     body {
-
-//         .container {
-//             width: 100vw;
-//             height: 100vh;
-//             background-size: 80%;
-//         }
-    
-//         .card {
-//             width: 100%;
-//             height: 970px;
-//             padding: 100px;
-//         } 
-    
-//         .text-hero {
-//             margin-top: 80px;
-//         }
-    
-//         .text-hero h1 {
-//             font-family: a.$heading-font-family;
-//             font-size: a.$heading-font-size;
-//             font-weight: a.$heading-font-weight;
-//         }
-    
-//         .text-hero h2 {
-//             font-family: a.$heading-font-family;
-//             font-size: a.$heading-font-size;
-//             font-weight: a.$heading-font-weight;
-//         }
-    
-//         #cursor {
-//             color: a.$third-color;
-//             font-family: a.$heading-font-family;
-//             font-size: 90px;
-//             font-weight: a.$heading-font-weight;
-//             animation: blink 1s linear infinite;
-//         }
-    
-//         .text-hero p {
-//             font-family: a.$body-font-family;
-//             font-size: a.$body-font-size;
-//             line-height: 50px;
-//             padding-top: 10px;
-//         }
-
-//     }
-
-// }
-
 @media screen and (max-width: 1200px) { 
     body {
         .container {
@@ -389,6 +339,37 @@ body {
         font-size: a.$mobile-body-font-size;
         line-height: 50px;
         padding-top: 10px;
+    }
+
+    .text-hero {
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
+    .text-hero h1 {
+        font-size: a.$m-heading-font-size;
+    }
+
+    .text-hero h2 {
+        font-size: a.$m-heading-font-size;
+    }
+
+    #cursor {
+        font-size: 60px;
+    }
+
+    .text-about {
+        margin-top: 90px;
+    }
+
+    .text-about h1 {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    .text-about h2 {
+        font-size: 30px;
+        margin-top: 40px;
     }
     
 }
