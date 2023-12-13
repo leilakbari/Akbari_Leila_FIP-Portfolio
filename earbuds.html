@@ -48,76 +48,145 @@
             </div>
         </div>
 
-        <div class="container-earbuds col-span-full" id="earbuds1">
+        <div class="container-earbuds1 col-span-full" id="earbuds1">
             <!-- <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8"> -->
                 <div class="card xl-col-start-2 l-col-start-2 col-start-1 col-end-5"> 
-                    <h3 class="xl-col-start-2 xl-col-end-10 l-col-start-2 l-col-end-12 m-col-start-1 m-col-end-11 col-start-1 col-end-5" id="earbuds-text">Click play button.</h3>
-                    <video controls class="col-span-full xl-col-start-2 l-col-start-2 col-start-1" id="demo-video" src="images/EarbudsPromotionalVideo.mp4"></video>      
+                    <!-- <h3 class="xl-col-start-2 xl-col-end-10 l-col-start-2 l-col-end-12 m-col-start-1 m-col-end-11 col-start-1 col-end-5" id="earbuds-text">Click play button.</h3> -->
+                    <video controls class="col-span-full xl-col-start-2 l-col-start-2 m-col-start-2 col-start-1" id="demo-video" src="images/EarbudsPromotionalVideo.mp4"></video>      
                 </div>
         </div>
         
-        <div class="container-earbuds col-span-full" id="about-me">
-            <div class="card2 col-start-1 col-end-5 l-col-start-2 xl-col-start-2" data-tilt>    
-                <div class="col-span-full m-col-start-2 m-col-end-12 col-span-full l-col-start-1 l-col-end-7">
+        <div class="container-earbuds1 col-span-full" id="AR-model">
+            <div class="card2 col-start-1 col-end-5 l-col-start-2 xl-col-start-2">    
+                <div class="AR-text col-span-full col-start-1 m-col-start-2 m-col-end-12 l-col-start-1 l-col-end-8 xl-col-start-1 xl-col-end-5">
                     <h3>AR Model Viewer</h3>
                     <p>Experience the wonders of our incredible earbuds using our AR Model Viewer!
                         Simply hover over each section to reveal the magic behind features.<br/>Explore hotspots for a close-up look, making it easy and fun to discover what makes our earbuds stand out. Step into the future of exploration, and elevate your journey through online shopping!</p>
                   </div>
+
+                  <div class="col-span-full col-start-1 m-col-start-1 l-col-start-8 xl-col-start-6 xl-col-end-13">
+                      <model-viewer id="model" src="model/Akbari_Leila_Earbuds(one)_AR.gltf" 
+                    ar ar-modes="webxr scene-viewer quick-look" 
+                    camera-controls poster="images/poster.webp" shadow-intensity="1" 
+                    autoplay camera-orbit="-293.7deg 54.83deg 4.401m" field-of-view="30deg">
+            
+                    <button class="Hotspot" slot="hotspot-1" data-surface="11 0 926 2826 2825 0.109 0.844 0.047" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation" id="hotspot-1">
+                          <!-- <h2>Comfortable Rubber</h2>
+                          <p>Comfortable Rubber is a silicone material that helps to keep the earbuds in the ear 
+                            and at the same time it feels very comfortable and prevents them from falling.</p> -->
+                        </div>
+                      </button>
+                      
+                      <button class="Hotspot" slot="hotspot-2" data-surface="25 0 0 2 1 0.244 0.392 0.364" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation" id="hotspot-2">
+                          <!-- <h2>Silver Plating</h2>
+                          <p>Silver Plating is a shiny Silver platet surface that places around the 
+                            earbuds and protects the earbuds body from damage.</p> -->
+                        </div>
+                      </button>
+                      
+                      <button class="Hotspot" slot="hotspot-3" data-surface="18 0 2135 2134 2133 0.066 0.239 0.694" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation" id="hotspot-3">
+                          <!-- <h2>Green Body</h2>
+                          <p>Green Body is the other part of the earbuds surface which the color reminds us of nature.
+                             Because nature is the first source for hearing beautiful and incredible sounds.</p> -->
+                        </div>
+                      </button>
+                      
+                      <button class="Hotspot" slot="hotspot-4" data-surface="19 0 1 2 0 0.400 0.292 0.308" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation" id="hotspot-4">
+                          <!-- <h2>Speaker</h2>
+                          <p>Speaker part places around the earbuds surface and with its 
+                            high technology, it creates a three-dimensional listening experience.</p> -->
+                        </div>
+                      </button>
+                      
+                      <button class="Hotspot" slot="hotspot-5" data-surface="1 0 198 197 196 0.353 0.180 0.466" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation" id="hotspot-5">
+                          <!-- <h2>Charging Port</h2>
+                          <p>Charging Port is a part of earbuds that charges them by placing them in their box.</p> -->
+                        </div>
+                      </button>
+                      
+                      <button class="Hotspot" slot="hotspot-6" data-surface="14 0 5 4 0 0.900 0.100 0.001" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation" id="hotspot-6">
+                          <!-- <h2>Finger Holder</h2> -->
+                          <!-- <p>Finger Holder is at the upper part of the earbuds, 
+                            which helps to hold and place them in the ear more easily with its indentation.</p> -->
+                        </div>
+                      </button>
+                      
+                      <!-- <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                      </div> -->
+                      
+                      <button slot="ar-button" id="ar-button">
+                        View in your space
+                      </button>
+                      
+                      <div id="ar-prompt">
+                        <img src="images/ar_hand_prompt.png">
+                      </div>
+            
+                    </model-viewer>
+                  </div>
+                 
             </div>
         </div>
 
-        <div class="container-earbuds col-span-full" id="projects">
-            <div class="card main-scroll-div">
-                <h1 class="col-span-full col-start-1 m-col-start-1 l-col-start-1 xl-col-start-1">Click on each Project to see the details.</h1>
-                <div>
-                    <button class="control prev col-start-1"><i class="fas fa-angle-left"></i></button>
-                </div>
-                <div class="slider-projects cover col-span-full" id="project-slider">
-                  <div class="scroll-images">
-                        <!-- <div class="child scroll-img col-span-full" data-tilt> -->
-                    <div class="child col-span-full">    
-                        <img href="404page.html" data-tilt class="child-img col-span-full l-col-start-1" src="images/zima-projects.jpg" alt="1">
-                        <a href="404page.html"><h2>Zima</h2></a>
-                        <p>UI/UX Design</p>
+        <div class="container-earbuds col-span-full" id="xray">
+                <div class="card xl-col-start-2 l-col-start-2 col-start-1 col-end-5"> 
+                    <div class="AR-text col-span-full col-start-1 m-col-start-2 m-col-end-12 l-col-start-1 l-col-end-8 xl-col-start-1 xl-col-end-5">
+                        <h3>X-Ray revealer</h3>
+                        <p>Dive into the details of our earbuds with the X-ray Slider!<br/>
+                            Easily switch between regular and X-ray views by dragging the slider. It's a fun way for tech fans or anyone curious about our earbud design to explore the cool tech inside. Give it a try and see the magic of our innovation!</p>
+                      </div>
+
+                    <div id="mobile-tablet-view" class="col-span-full col-start-1 m-col-start-1 l-col-start-8 xl-col-start-6 xl-col-end-13">
+                        <img src="images/earbud-x-ray.jpg" alt="x-ray earbuds">
+                        <img src="images/earbud.jpg" alt="regular view of earbuds">
+                    </div>
+        
+                    <div id="outerShell" class="col-span-full col-start-1 m-col-start-1 l-col-start-8 xl-col-start-6 xl-col-end-13">
+                        <div id="imageCon">
+                    
+                            <div class="slideImage image-right"></div>
+                            
+                            <div class="slideImage image-left"></div>
+                            
+                            <div class="slideImage image-drag"></div>
+                        </div>
                     </div>
 
-                    <div class="child col-span-full">
-                        <img href="404page.html" data-tilt class="child-img col-span-full l-col-start-1" src="images/kadot-projects.jpg" alt="2">
-                        <a href="404page.html"> <h2>Kadot</h2></a>
-                        <p>UI/UX Design</p>
-                    </div>
-
-                    <div class="child col-span-full">
-                        <img href="contact.html" data-tilt class="child-img col-span-full l-col-start-1" src="images/earbuds-projects.jpg" alt="3">
-                        <a href="contact.html"> <h2>Earbuds</h2> </a>
-                        <p>3D Design - Website</p>
-                    </div>
-
-                    <div class="child col-span-full">
-                        <img href="demoReel.html" data-tilt class="child-img col-span-full l-col-start-1" src="images/demoreel-projects.jpg" alt="3">
-                        <a href="demoReel.html"><h2>Demo Reel</h2></a>
-                        <p>Video Design</p>
-                    </div>
-
-                    <div class="child col-span-full">
-                        <img href="404page.html" data-tilt class="child-img col-span-full l-col-start-1" src="images/ceci-projects.jpg" alt="3">
-                       <a href="404page.html"> <h2>Ceci</h2> </a>
-                        <p>Branding</p>
-                    </div>
+                    <!-- <div class="xray-section col-span-full col-start-1 m-col-start-1 l-col-start-8 xl-col-start-6 xl-col-end-13">
+                        <div id="mobile-tablet-view">
+                            <img src="images/earbud-x-ray.jpg" alt="x-ray earbuds">
+                            <img src="images/earbud.jpg" alt="regular view of earbuds">
+                        </div>
+            
+                        <div id="outerShell">
+                            <div id="imageCon">
                         
-                  </div>
-                </div> 
-                <div>
-                    <!-- <button class="icon" onclick="scrollr()"><i class="fas fa-angle-right"></i></button> -->
-                    <button class="control next col-start-5"><i class="fas fa-angle-right"></i></button>
-                </div>   
-                <!-- <button class="btn2 l-col-end-5">Contact Me</button> -->
-            </div>
+                                <div class="slideImage image-right"></div>
+                                
+                                <div class="slideImage image-left"></div>
+                                
+                                <div class="slideImage image-drag"></div>
+                            </div>
+                        </div>
+                    </div>   -->
+                    
+                </div>
         </div>
 
     </div>
-   
 
+
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"
+    ></script>
     <!-- main library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <!-- ScrollTrigger plugin -->
